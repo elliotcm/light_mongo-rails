@@ -1,2 +1,1 @@
 require 'model'
-raise 'here'
