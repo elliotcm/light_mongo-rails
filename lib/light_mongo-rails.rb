@@ -1,0 +1,2 @@
+require 'model'
+raise 'here'
