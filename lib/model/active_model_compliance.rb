@@ -14,6 +14,10 @@ module LightMongo
   module Model
     
     module ActiveModelCompliance
+      def to_param
+        @_id.to_s
+      end
+
       # Replace this with your own validations.
       def valid?
         true

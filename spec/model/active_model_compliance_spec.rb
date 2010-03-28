@@ -11,6 +11,20 @@ describe ActiveModelCompliance do
     @model = ActiveModelComplianceTest.new
   end
   
+  describe "#to_param" do
+    before(:each) do
+      @model.instance_variable_set(:@_id,
+        mock(:oid,
+          :to_s => (@string_id = mock(:string_id))
+        )
+      )
+    end
+    
+    it "returns the string form of the document id" do
+      @model.to_param.should == @string_id
+    end
+  end
+  
   describe "#valid?" do
     it "responds to #valid?" do
       @model.should respond_to(:valid?)
