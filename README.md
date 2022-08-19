@@ -3,6 +3,10 @@ LightMongo-Rails
 
 LightMongo-Rails provides ActionPack compatibility for [LightMongo][lm], allowing you to use form_for and other such helpers.
 
+Status
+------
+This project is long abandoned in favour of other contemporary ORMs.
+
 Installation
 ------------
 
